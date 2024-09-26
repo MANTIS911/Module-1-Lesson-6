@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+
+    <form>
+        <fieldset>
+            <legend><b>User Deatail <Form></Form></b></legend>
+            <br>
+            <label>Username:</label>
+            <input type="text">
+            <br>
+            <br>
+
+            <label>Age:</label>
+            <input type="number">
+            <br>
+            <br>
+            <label>Password:</label>
+            <input type="password">
+            <br>
+            <br>
+            <label>Gender:</label>
+            <br>
+            <input type="radio" id="Female" name="gender" value="Female"> Female
+            <input type="radio" id="Male" name="gender" value="Male"> Male
+            <br>
+            <br>
+            <label>Favorite Citys:</label>
+            <br>
+            <input type="checkbox" id="City" value="Seattle">Seattle
+            <br>
+            <input type="checkbox" id="City" value="LA">LA
+            <br>
+            <input type="checkbox" id="City" value="Brookland">Brookland
+            <br>
+            <input type="checkbox" id="City" value="Austin">Austin
+            <br>
+            <input type="checkbox" id="City" value="Boston">Boston
+            <br>
+            <br>
+
+            <label>Subjects</label>
+            <select name="Subject" id="Subjects">
+                <option value="Maths">Maths</option>
+                <option value="Science">Science</option>
+                <option value="History">History</option>
+                <option value="Orchestra">Orchestra</option>
+            </select>
+            <br>
+            <br>
+            <label>Birthday</label>
+            <input type="date">
+            <br>
+            <br>
+            <label>Email</label>
+            <input type="text" placeholder="123456@gmail.com">
+            <br>
+            <br>
+
+            <input type="submit">
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <form oninput="sum.value = parseInt (num1.value) + parseInt (num2.value)">
+        <fieldset>
+            <legend>Addition</legend>
+            <input type="number" id="num1" name="num1" value="0"> +
+            <input type="numbers" id="num2" name="num2" value="0"> =
+            <output name="sum" for="num1 num2"></output>
+
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
